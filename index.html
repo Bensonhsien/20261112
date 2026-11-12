@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = [0, 1, 0, 0] //陣列
+        let b = {
+            '甜度': 'ss',
+            '冰度': 'ss',
+            '水量': 'ss',
+        } //物件
+        //使用的符號
+        //排序方式
+        //陣列:有序排列(無法改動索引值)
+        //物件:無序排列
+        //陣列用於重複性的地方
+        //物件用於每一個重複性裡面相同的配件
+        // 舉例: 飲料表
+        // 1.珍奶, 半糖, 微冰, 60
+        // 2.綠茶, 微糖, 微冰, 40
+        // 3.珍奶, 微糖, 全冰, 60
+
+        // [珍奶, 綠茶, 珍奶]
+        // [半糖, 微糖]
+        // [微冰, 微冰, 全冰]
+        // [60, 40, 60]
+
+        // 物件
+        //key(索引值)->可以自己取名子
+        // {
+        //     key: value
+        //     要串好幾個用,區隔
+        // }
+        let c01 = {
+            "name": "珍奶"
+            "sweet": "半糖"
+            "ice": "微冰"
+            "price"= 60
+        }
+        console.log(c01)
+        let c02 = {
+            "name": "綠茶"
+            "sweet": "微糖"
+            "ice": "微冰"
+            "price"= 40
+        }
+        console.log(c01)
+        let c03 = {
+            "name": "珍奶"
+            "sweet": "微冰"
+            "ice": "全冰"
+            "price"= 60
+        }
+        console.log(c01, c02, c03)
+        let d = [{
+            "name": "珍奶"
+            "sweet": "微冰"
+            "ice": "全冰"
+            "price"= 60
+        }
+        {
+            "name": "綠茶"
+            "sweet": "微糖"
+            "ice": "微冰"
+            "price"= 40
+        }
+            let c03 = {
+            "name": "珍奶"
+            "sweet": "微冰"
+            "ice": "全冰"
+            "price"= 60
+        }];
+        console.log(c01, c02, c03)
+
+        //操作物件的方式
+        //新增[賦予](物件.要得索引值名稱)
+        c01.sss = 12
+        console.log(sss)
+        //編輯[賦予](物件.索引值 = 值)
+        c01.price = 100
+        //讀取(物件.索引值名稱)
+        console.LOG(c01.price);
+        //刪除 (delete 物件.刪除的索引值)
+        delete c01.price
+        console.log(c01)
+
+        //新增/編輯/讀取/刪除
+        //後端很常講的 「CRUD」
+    </script>
+</body>
+
+</html>
